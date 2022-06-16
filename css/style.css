@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100vh;
+}
+body {
+  background-color: #bdbdbd;
+}
+
+.menu img {
+  width: 230px;
+  margin-left: 10px;
+  position: absolute;
+}
+header {
+  background-color: #afb42b;
+  padding: 20px;
+}
+.menu nav {
+  text-align: right;
+}
+.menu nav ul {
+  list-style: none;
+  padding: 0;
+}
+.menu nav ul li {
+  display: inline-block;
+  font-size: 20px;
+  margin-right: 80px;
+  margin-top: 10px;
+}
+.menu nav ul li a {
+  text-decoration: none;
+  color: #212121;
+  transition: all 1s;
+}
+
+.menu nav ul li a:hover {
+  color: #afb42b;
+  background-color: #212121;
+}
+
+.container {
+  margin-bottom: 100px;
+}
+
+.container form {
+  width: auto;
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+  padding: 15px;
+}
+
+.titulo {
+  font-family: "Indie Flower", cursive;
+  color: whitesmoke;
+  position: absolute;
+  margin-top: 150px;
+  padding: 10px;
+  text-align: center;
+  text-shadow: 5px 2px 8px #212121;
+  transition: all 1s;
+}
+.titulo:hover {
+  color: #dcedc8;
+}
+.img__main {
+  text-align: center;
+}
+
+.img__main img {
+  width: 70%;
+}
+
+.fuentes {
+  font-family: "roboto medium 500";
+  font-size: large;
+  text-align: center;
+}
+.cajas-form {
+  background-color: #dcedc8;
+  border-radius: .10rem;
+  text-align: justify;
+  margin: 5px 2px;
+}
+
+.nosotros {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  padding: 50px;
+}
+footer {
+  padding-top: 10px;
+  background-color: #dcedc8;
+  box-shadow: 10px 10px 5px;
+}
+footer a {
+  color: #212121;
+  transition: all 1s;
+}
+footer a:hover {
+  color: #afb42b;
+}
+footer ul li {
+  text-decoration: none;
+  color: #212121;
+  font-size: 20px;
+  list-style: none;
+}
+.derechos {
+  font-family: "roboto medium 500";
+  font-size: 5px;
+}
+.piePag li {
+  list-style: none;
+}
+.piePag li a {
+  text-decoration: none;
+}
+
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  padding: 2%;
+  flex-grow: 1;
+  flex-basis: 10%;
+  justify-content: space-between;
+  display: flex;
+}
+.card__img img {
+  max-width: 100%;
+}
+.card__titulo {
+  margin-top: auto;
+  text-align: center;
+}
+.resultado__busqueda {
+  text-align: center;
+}
+/* aca va el css de reserva */
+
+.border_reserva {
+  border: 1px solid #212121;
+  border-radius: 8px;
+}
+#wrapper {
+  display: grid;
+  grid-template-areas:
+    "formulario suma"
+    "seguros suma"
+    "adicionales suma";
+  grid-template-columns: auto 30%;
+  grid-template-rows: 150px 1fr 1fr;
+  row-gap: 10px;
+  column-gap: 10px;
+  margin: 20px 10px;
+  
+}
+section#datos {
+  grid-area: formulario;
+}
+section#seguros {
+  grid-area: seguros;
+  
+}
+section#adicionales {
+  grid-area: adicionales;
+}
+aside {
+  grid-area: suma;
+}
+#datos_form {
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.items_adicionales h5 {
+  margin: 10px;
+  text-align: center;
+}
+.items_adicionales p {
+  margin: 10px;
+  text-align: center;
+}
+.items_adicionales button{
+  float: right;
+  margin: 10px 10px;
+}
