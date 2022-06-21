@@ -20,84 +20,79 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Gentium+Plus:ital,wght@0,400;0,700;1,400&family=Indie+Flower&family=Roboto:wght@100;300;500;900&display=swap" rel="stylesheet">    <title>some Rent a car</title>
   </head>
   <body>
-    <header>
-      <div class="menu">
-        <img src="./assets/img/car_hero.png" alt="" />
-        <nav>        
-          <ul>   
+    <section id="wrapper-gral">
+      <header>
+        <nav class="menu">            
+          <input  type="checkbox" id="check">
+          <label for="check" class="checkBtn">
+            <i class="fa-solid fa-bars" ></i>
+          </label> 
+          <img src="./assets/img/car_hero.png" alt=""/ class="logo"> 
+          <ul> 
             <li><a href="index.html">Inicio</a></li>                
             <li><a href="./views/nosotros.html">Nosotros</a></li>
             <li><a href="./views/nuestraFlota.html">Nuestra Flota</a></li>
             <li><a href="./views/condiciones.html">Condiciones</a></li>
             <li><a href="./views/faq.html">FAQ</a></li>
             <li><a href="#contacto">Contacto</a></li>
-          </ul>
-        </nav>
-      </div>
-      
-    </header>
-    
-    <section >
-      <div class="container">
-          
-        <form  form action="./views/resultados.html" method="get" >
-          <div class="fuentes">
-            <label for="salida" >Fecha de salida</label>
-            <input type="date" name="xxx" id="salida" required  class="cajas-form">
-            <label for="llegada">Fecha de Llegada</label>
-            <input type="date" name="" id="llegada" required class="cajas-form">
-            <label for="">Soy mayor de 21 años</label>
-            <input type="checkbox" required class="cajas-form">
-            <label for="Submit"></label>
-            <input type="submit" class="cajas-form" onclick="calculoDias()"/>
-          </div>          
-        </form>
-        <div class="titulo">
-          <h1>Alquiler de autos <br> en Mendoza</h1>
+          </ul>    
+        </nav>   
+      </header>
+      <main>
+        <div class="container">          
+          <form  form action="./views/resultados.html" method="get" >
+            <div class="fuentes">
+              <label for="salida" >Fecha de salida</label>
+              <input type="date" name="xxx" id="salida" required  class="cajas-form">
+              <label for="llegada">Fecha de Llegada</label>
+              <input type="date" name="" id="llegada" required class="cajas-form">
+              <label for="">Soy mayor de 21 años</label>
+              <input type="checkbox" required class="cajas-form">
+              <label for="Submit"></label>
+              <input type="submit" class="cajas-form" onclick="calculoDias()"/>
+            </div>          
+          </form>
+          <div class="titulo">
+            <h1>Alquiler de autos en Mendoza</h1>
+          </div>
+          <div class="img__main">
+              <img src="./assets/img/intro-autos.png" alt="">
+          </div>
         </div>
-        <div class="img__main">
-            <img src="./assets/img/intro-autos.png" alt="">
+      </main>
+      <footer >
+        <div class="row">
+            <div class="col-md-3"></div>
+          <div class="col-md-3 fuentes piePag">
+              <ul>
+                  <li><a href="./views/condiciones.html">Condiciones</a></li>
+                  <li><a href="./views/faq.html">FAQ</a></li>
+                  <li><a href="./views/nosotros.html">Nosotros</a></li>
+                  <li><a href="./views/nuestraFlota.html">Nuestra Flota</a></li>
+    
+                  
+              </ul>
+          </div>
+          <div class="col-md-3 fuentes">
+            
+              <fieldset>
+                  <legend id="contacto">Contactanos</legend>
+                <ul>
+                    <li><a href="mailto:augusto4809@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>  Reservas@somerentacar.com.ar</li>
+                    <li><a href="https://api.whatsapp.com/send?phone=5492944922404" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>  Envianos un whatsapp</li>
+                    <li><a href="https://www.google.com/maps/dir//Gral.+Espejo+391,+M5500+Mendoza/@-32.8885385,-68.8461127,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x967e091b7458a1e3:0x3dfae019c07d61e5!2m2!1d-68.843924!2d-32.888543" target="_blank"><i class="fa-solid fa-map-location-dot"></i></a>  Espejo 391, Mendoza</li>
+                </ul>                        
+              </fieldset>
+            
+          </div>
+          <div class="col-md-3"></div>
         </div>
-      </div>
-      
-      <!--container-->
-    
-
-    
-</section>
-<footer >
-    <div class="row">
-        <div class="col-md-3"></div>
-      <div class="col-md-3 fuentes piePag">
-          <ul>
-              <li><a href="./views/condiciones.html">Condiciones</a></li>
-              <li><a href="./views/faq.html">FAQ</a></li>
-              <li><a href="./views/nosotros.html">Nosotros</a></li>
-              <li><a href="./views/nuestraFlota.html">Nuestra Flota</a></li>
-
-              
-          </ul>
-      </div>
-      <div class="col-md-3 fuentes">
         
-          <fieldset>
-              <legend id="contacto">Contactanos</legend>
-            <ul>
-                <li><a href="mailto:augusto4809@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>  Reservas@somerentacar.com.ar</li>
-                <li><a href="https://api.whatsapp.com/send?phone=541192944922404" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>  Envianos un whatsapp</li>
-                <li><a href="https://www.google.com/maps/dir//Gral.+Espejo+391,+M5500+Mendoza/@-32.8885385,-68.8461127,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x967e091b7458a1e3:0x3dfae019c07d61e5!2m2!1d-68.843924!2d-32.888543" target="_blank"><i class="fa-solid fa-map-location-dot"></i></a>  Espejo 391, Mendoza  </ul>
-                </li>
-            </ul>                        
-          </fieldset>
-        
-      </div>
-      <div class="col-md-3"></div>
-    </div>
     
-
-    <div>
-      <p class="derechos">® All rigths reserved</p>
-    </div>
-  </footer>
+        <div>
+          <p class="derechos">® All rigths reserved</p>
+        </div>
+      </footer>
+    </section>
   </body>
 </html>
