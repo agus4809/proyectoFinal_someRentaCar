@@ -1,10 +1,19 @@
-function calculoDias(){
-    
-    var salida = document.getElementById("formGroupExampleInput").value;
-    var llegada = document.getElementById("formGroupExampleInput2").value;
-    
-    
+const fechas = document.querySelector("#formularioFechas");
 
+
+fechas.addEventListener("submit", mostrarFechas())
+
+function mostrarFechas(e){
+    e.preventDefault();
+    const inicio = document.querySelector("#formGroupExampleInput").value;
+    const fin = document.querySelector("#formGroupExampleInput2").value;
+    console.log("validando" + " " + inicio + " " + fin)
 }
 
-document.getElementById("resPickup").innerHTML= salida;
+
+
+
+
+
+
+
