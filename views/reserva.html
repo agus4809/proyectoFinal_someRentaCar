@@ -39,37 +39,46 @@
         </nav>   
     </header>
     <main>
-        <div id="wrapper-reserva">
-            <section id="datos" class="border_reserva">
-                <form action="" id="datos_form" class="fuentes row">
-                  <div class="col-md-4">
-                    <label for="Nombre"></label>
-                    <input type="text" name="" id=""class="cajas-form" placeholder="Nombre / s">
-                  </div>  
-                  <div class="col-md-4">
-                    <label for="Apellido"></label>
-                    <input type="text" name="" id=""class="cajas-form" placeholder="Apellido / s">
-                  </div>            
-                  <div class="col-md-4">
-                    <label for="dni"></label>
-                    <input type="text" name="" id=""class="cajas-form" placeholder="DNI o Pasaporte">
-                  </div>  
-                  <div class="col-md-4"> 
-                    <label for="e-mail"></label>
-                    <input type="email" name="" id=""class="cajas-form" placeholder="E-Mail">
-                  </div>          
-                  <div class="col-md-4"> 
-                    <label for="e-mail"></label>
-                    <input type="tel" name="" id=""class="cajas-form" placeholder="Teléfono">
-                  </div>
-                  <div class="col-md-4">
-                    <label for="direccion"></label>
-                    <input type="text" name="" id=""class="cajas-form" placeholder="Domicilio">
-                  </div>
-                  <div class="col-md-4">
-                    <label for="pais"></label>
-                    <select name="pais"class="cajas-form">
-                      <option value="AF">Afganistán</option>
+      <div class="container">
+        <div class="row">
+          <div><h3>Ingrese sus datos</h3></div>
+          <div class="col-1"></div>
+          <div class="col-10">
+            <form class="row g-3 needs-validation reserva-datos-form" novalidate="" action="../views/adicionales.html">
+              <div class="col-md-4 ">
+                <label for="validationTooltip01" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="validationTooltip01" value="" required="">
+                
+              </div>
+              <div class="col-md-4 ">
+                <label for="validationTooltip02" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="validationTooltip02" value="" required="">
+                
+              </div>
+              <div class="col-md-4">
+                <label for="validationTooltipUsername" class="form-label">E-mail</label>
+                <div class="input-group has-validation">
+                  <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                  <input type="email" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required="">
+                  
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="validationTooltip03" class="form-label">Domicilio</label>
+                <input type="text" class="form-control" id="validationTooltip03" required="">
+                
+              </div>
+              <div class="col-md-3 ">
+                <label for="validationTooltip05" class="form-label">Ciudad</label>
+                <input type="text" class="form-control" id="validationTooltip05" required="">
+              </div>
+
+              <div class="col-md-3">
+                <label for="validationTooltip04" class="form-label">País</label>
+                <select class="form-select" id="validationTooltip04" required="">
+                  <option selected="" disabled="" value="">Seleccione su país</option>
+                  <option>
+                    <option value="AF">Afganistán</option>
                       <option value="AL">Albania</option>
                       <option value="DE">Alemania</option>
                       <option value="AD">Andorra</option>
@@ -302,80 +311,22 @@
                       <option value="YU">Yugoslavia</option>
                       <option value="ZM">Zambia</option>
                       <option value="ZW">Zimbabue</option>
-                      </select>
-                  </div>
-                  <div class="col-md-4">
-                    <label for="sucursal-ret"></label>
-                    <select name="" id=""class="cajas-form">
-                      <option selected class="cajas-form">Sucursal de retiro</option>
-                      <option value="centro" class="cajas-form">Mendoza Centro, Espejo 391. </option>
-                      <option value="aeropuerto"class="cajas-form">Mendoza aeropuerto</option>
-                    </select>
-                  </div>
-                  <div class="col-md-4">
-                    <label for="sucursal-drop"></label>
-                    <select name="" id=""class="cajas-form">
-                      <option selected class="cajas-form">Sucursal de Devolución</option>
-                      <option value="centro" class="cajas-form">Mendoza Centro, Espejo 391. </option>
-                      <option value="aeropuerto"class="cajas-form">Mendoza aeropuerto</option>
-                    </select>
-                  </div>
-                  
-                  
-                </form>
-            </section>
-
-            <section id="seguros"class="border_reserva">
-            opciones de seguros
-            </section>
-
-            <section id="adicionales"class="border_reserva">
-              <div class="row items_adicionales">
-                <div class="col-md-8">
-                  <h5>Silla de bebe </h5>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo adipisci, commodi provident inventore quasi iure veritatis reiciendis accusamus sapiente eveniet, similique dolorem tempore itaque autem vel molestiae asperiores voluptatibus eius.</p>
-                </div>
-                <div class="col-md-4">
-                  <button type="button" class="btn btn-primary">Agregar</button>
-                </div>
-                <div class="col-md-8">
-                  <h5>GPS</h5>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolores quidem nemo quas deleniti suscipit, non, deserunt atque doloribus, quibusdam animi alias temporibus. Accusantium vel modi ipsa, hic ad nulla!</p>
-                </div>
-                <div class="col-md-4">
-                  <button type="button" class="btn btn-primary">Agregar</button>
-                </div>
-                <div class="col-md-8">
-                  <h5>Conductor adicional</h5>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, praesentium laborum quam magnam aliquid nemo necessitatibus sunt soluta, recusandae assumenda voluptatem deserunt veritatis odit libero pariatur eveniet saepe. Ex, perferendis!</p>
-                </div>
-                <div class="col-md-4">
-                  <button type="button" class="btn btn-primary">Agregar</button>
-                </div>
-                <div class="col-md-8">
-                  <h5>Cruce de frontera</h5>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas error eveniet corrupti nihil explicabo expedita corporis nulla modi accusantium iste nobis, ab reiciendis eligendi nostrum ea inventore voluptates quidem similique.</p>
-                </div>
-                <div class="col-md-4">
-                  <button type="button" class="btn btn-primary">Agregar</button>
-                </div>
-                <div class="col-md-8">
-                  <h5>Cadenas para nieve</h5>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum ad officia voluptatem nostrum? Provident magni cum mollitia explicabo quia sunt consequuntur earum. Neque a nihil sunt labore debitis magnam sed?</p>
-                </div>
-                <div class="col-md-4">
-                  <button type="button" class="btn btn-primary">Agregar</button>
-                </div>
+                  </option>
+                </select>                
               </div>
-            
-            </section>
+              
+              <div class="col-12 reserva-datos-form-btn">
+                <button class="btn btn-primary " type="submit">Ir a adicionales</button>
+              </div>
+            </form>
 
-            <aside id="suma"class="border_reserva">
-            sumatoria de alq + seguros + adicionales y boton de compra 
-            </aside>
+          </div>
+          <div class="col-1"></div>
         </div>
+      </div>
+
     </main>  
-    <footer >
+      <footer >
         <div class="row">
             <div class="col-md-3"></div>
           <div class="col-md-3 fuentes piePag">

@@ -198,44 +198,18 @@ footer ul li {
 }
 /* aca va el css de reserva */
 
-.border_reserva {
-  border: 1px solid #212121;
-  border-radius: 8px;
+.reserva-datos-form{
+  text-align: center;
+  font-size: 1.2rem;
+}
+.reserva-datos-form-btn{
+  text-align: right;
 }
 
-#wrapper-reserva {
-  display: grid;
-  grid-template-areas:
-    "formulario suma"
-    "seguros suma"
-    "adicionales suma";
-  grid-template-columns: auto 30%;
-  grid-template-rows: 150px 1fr 1fr;
-  row-gap: 10px;
-  column-gap: 10px;
-  margin: 20px 10px;
+/* aca va el css de adicionales */
+#adicionales{
+  margin-bottom: 20px;
 }
-section#datos {
-  grid-area: formulario;
-}
-section#seguros {
-  grid-area: seguros;
-}
-section#adicionales {
-  grid-area: adicionales;
-}
-aside {
-  grid-area: suma;
-}
-#datos_form {
-  padding: 5px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-  margin-top: 10px;
-}
-
 .items_adicionales h5 {
   margin: 10px;
   text-align: center;
@@ -244,11 +218,24 @@ aside {
   margin: 10px;
   text-align: center;
 }
-.items_adicionales button {
-  float: right;
-  margin: 10px 10px;
+.adicionales-form-btn{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 20px;
+  
 }
+.adicionales-form-btn-right{
+  float: right;
 
+}
+/* css de reserva finalizada */
+.reserva_Terminada {
+  text-align: center;
+}
+.reserva_Terminada h3{
+  margin-bottom: 50px;
+}
 /* css de nuestra flota */
 
 .flota-img{
