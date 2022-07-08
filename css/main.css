@@ -1,0 +1,1 @@
+h1{font-size:size;font-family:font;text-align:align;color:#C5CAE9;padding:2px}nav{background-color:back;width:ancho;height:alto;display:flex}nav ul{display:flex;flex-direction:row;list-style:none;text-align:right}nav li{text-decoration:none;margin-right:20px;align-items:center}nav a{text-decoration:none}nav a:hover{color:#afb42b;background-color:#212121}body{background-color:red}

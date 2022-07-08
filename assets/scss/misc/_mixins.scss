@@ -1,0 +1,17 @@
+@mixin titulo($size, $font, $align, $Font_color) {
+    font-size: size;
+    font-family: font;
+    text-align: align;
+    color: $Font_color;
+}
+@mixin parrafo($size, $font, $align, $Font_color) {
+    font-size: size;
+    font-family: font;
+    text-align: align;
+    color: $Font_color;
+}
+@mixin nav($back, $ancho, $alto) {
+    background-color:back;
+    width: ancho;
+    height: alto;
+}

@@ -1,0 +1,36 @@
+
+
+h1{
+    @include titulo($mid,$principal,center,$ligth_primary);
+    padding: 2px;
+}
+nav{
+    @include nav($Dark_primary,100px,80px);
+    display: flex;
+   
+    ul{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        text-align: right;
+        
+        
+    }
+    li{
+        text-decoration: none;
+        margin-right: 20px;
+        align-items: center;
+        
+    }
+    a{
+        text-decoration: none;
+    }
+    a:hover {
+        color: #afb42b;
+        background-color: #212121;
+      }
+    
+}
+body{
+    background-color: red;
+}
