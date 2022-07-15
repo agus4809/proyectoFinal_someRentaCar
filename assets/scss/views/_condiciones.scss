@@ -1,36 +1,99 @@
 
 
-h1{
-    @include titulo($mid,$principal,center,$ligth_primary);
-    padding: 2px;
-}
+
 nav{
     @include nav($Dark_primary,100px,80px);
     display: flex;
+    background-color: $divider;
+    
    
     ul{
         display: flex;
         flex-direction: row;
         list-style: none;
-        text-align: right;
+        justify-content: space-around;
+        width: 100%;
+        align-items: center;
         
         
     }
     li{
         text-decoration: none;
         margin-right: 20px;
-        align-items: center;
         
     }
     a{
         text-decoration: none;
+        color: $primary_text;
+        font: $secundaria;
+    }
+    img{
+        width:20%;
     }
     a:hover {
-        color: #afb42b;
-        background-color: #212121;
+        color:$Dark_primary;
+        font-size: $small;
       }
     
 }
 body{
-    background-color: red;
+    background-color: $ligth_primary;
+}
+main{
+    h1{
+        @include titulo($mid,$principal,center,$Dark_primary);
+        padding: 0 2px;
+        margin: 30px
+    }
+    p{
+        @include parrafo($small, $secundaria, justify, $secondary_text);
+            margin: 40px;
+        
+    }
+}
+footer{
+    background-color: $divider;
+    .links_footer{
+        ul{
+            margin-top: 20px;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            color: $primary_text;
+            text-decoration: none;
+        }
+        a:hover{
+            color: $acent_color;
+            font-size: $small;
+        }
+    }
+    .contacto_footer{
+        @extend .links_footer;
+    }
+    .btn_footer{
+        
+        border-radius: 5px;
+        letter-spacing: 2px;
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+     text-decoration: none;
+    }
+    $links:(
+        inicio: $Dark_primary,
+        nosotros:$acent_color,
+        nuestra_flota:$ligth_primary,
+
+    );
+
+    @each $link, $color in $links{
+        .btn-#{$link} {
+            @extend .btn_footer;
+            color:$color;
+        }
+    }
+
+
 }
