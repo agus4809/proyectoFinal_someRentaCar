@@ -36,6 +36,7 @@ nav{
       }
     
 }
+
 body{
     background-color: $ligth_primary;
 }
@@ -68,32 +69,52 @@ footer{
             color: $acent_color;
             font-size: $small;
         }
-    }
-    .contacto_footer{
-        @extend .links_footer;
-    }
-    .btn_footer{
+        .contacto_footer{
+            @extend .links_footer;
+        }
+    }       
+}
+
+
+    
+
+    
+
+.maps{
+    ul{
         
+        list-style: none;
+    }
+    li{
+        margin: 10px;
+    }
+    
+    .btn_footer{
+       
         border-radius: 5px;
         letter-spacing: 2px;
         margin: 10px;
-        padding: 10px;
+        padding: 2px;
         text-align: center;
-     text-decoration: none;
+        text-decoration: none;
+        background-color: black;
+        
+    }
+    .btn_footer:hover{
+        background-color: $secondary_text;
     }
     $links:(
         inicio: $Dark_primary,
-        nosotros:$acent_color,
-        nuestra_flota:$ligth_primary,
+        nosotros: $acent_color,
+        nuestra_flota: $primary_text,
 
     );
-
     @each $link, $color in $links{
         .btn-#{$link} {
             @extend .btn_footer;
-            color:$color;
+            color:$color;           
+            
         }
     }
-
-
 }
+    

@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
- box-sizing: border-box;
+    box-sizing: border-box;
   
 }
 
@@ -151,11 +151,16 @@ nav ul li a:hover {
 footer {
   padding-top: 10px;
   background-color: #dcedc8;
-  box-shadow: 10px 10px 5px;
+  /* box-shadow: 10px 10px 5px; */
+  
+}
+footer .row{
+  width: 100%;
+  
 }
 footer a {
   color: #212121;
-  transition: all 1s;
+  transition: all 0.5s;
 }
 footer a:hover {
   color: #afb42b;
@@ -166,10 +171,7 @@ footer ul li {
   font-size: 20px;
   list-style: none;
 }
-.derechos {
-  font-family: "roboto medium 500";
-  font-size: 5px;
-}
+
 .piePag li {
   list-style: none;
 }
@@ -182,6 +184,7 @@ footer ul li {
 .productos {
   display: flex;
   flex-wrap: wrap;
+  
 }
 .card {
   padding: 2%;
@@ -189,6 +192,8 @@ footer ul li {
   flex-basis: 10%;
   justify-content: space-between;
   display: flex;
+  margin-bottom: 20px;
+  margin-right: 20px;
 }
 .card__img img {
   max-width: 100%;
@@ -200,6 +205,12 @@ footer ul li {
 .resultado__busqueda {
   text-align: center;
 }
+.resultado__busqueda input{
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+}
+
 /* aca va el css de reserva */
 
 .reserva-datos-form{
@@ -208,6 +219,7 @@ footer ul li {
 }
 .reserva-datos-form-btn{
   text-align: right;
+  
 }
 
 /* aca va el css de adicionales */
@@ -261,14 +273,15 @@ color: #6c757d;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:#dcedc8;
+  background-color:white;
   border-radius: 4px;
-border: 1px solid white;
-transition: transform 0.3s ease-in-out;
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-}
+  border: 1px solid white;
+  transition: transform 0.3s ease-in-out;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  }
 .flota-img:hover{
   filter: opacity(0.4);
   transform: scale(1.04);
@@ -291,8 +304,7 @@ background-repeat: no-repeat;
 }
 .capa{
 
-  text-align: center;
- 
+  text-align: center; 
   top: 0;
   width: 100%;
   height: 100%;
